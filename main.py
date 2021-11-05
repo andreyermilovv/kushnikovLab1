@@ -162,7 +162,7 @@ def make_radar_chart(name, stats, attribute_labels, plot_markers=[0, 0.2, 0.4, 0
 
     init_params = [float(m0v.get()), float(m1v.get()), float(m2v.get()), float(m3v.get()), float(m4v.get()),
                    float(m5v.get()), float(m6v.get()), float(m7v.get()), float(m8v.get()), float(m9v.get())]
-
+    init_params = np.concatenate((init_params, [init_params[0]]))
     fig = plt.figure(figsize=(8, 8))
     ax = fig.add_subplot(111, polar=True)
     ax.plot(angles, stats, 'o-', linewidth=2)
