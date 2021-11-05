@@ -132,7 +132,7 @@ def calculate():
         res[char.label] = y
     print(res)
 
-# - todo полиномы, интерфейс, начальные значения на диаграммах
+
 def get_faks_image():
     fig = plt.subplots()
     t = np.linspace(0, 1, 100)
@@ -253,15 +253,15 @@ spin4.grid(row=3, column=3)
 spin5 = Spinbox(from_=0, to=60, width=3)
 spin5.grid(row=4, column=3)
 
-x12 = Label(text="=*x^2 +")
+x12 = Label(text="*x^2 +")
 x11 = Label(text="*x +")
-x22 = Label(text="=*x^2 +")
+x22 = Label(text="*x^2 +")
 x21 = Label(text="*x +")
-x32 = Label(text="=*x^2 +")
+x32 = Label(text="x^2 +")
 x31 = Label(text="*x +")
-x42 = Label(text="=*x^2 +")
+x42 = Label(text="*x^2 +")
 x41 = Label(text="*x +")
-x52 = Label(text="=*x^2 +")
+x52 = Label(text="*x^2 +")
 x51 = Label(text="*x +")
 
 x11.grid(row=0, column=7, sticky="w")
